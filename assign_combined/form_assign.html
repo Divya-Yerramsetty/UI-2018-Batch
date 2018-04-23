@@ -1,0 +1,88 @@
+<!-- main document-->
+<!DOCTYPE html>
+<html>
+    <!--header section-->
+    <head>
+        <!--Title of the form-->
+        <title>UNT</title>
+        <!--Stylesheet-->
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <!--body of the document-->
+    <body>
+        <!-- main article-->
+        <article>
+            <!-- page header-->
+            <header>
+                <h2>UNT Form</h2>
+            </header>
+            <section>
+                <article>
+                    <header id="nav-heading">
+                        <!--Page navigation-->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="https://www.coe.unt.edu/college-of-education-home" target="_blank">Education</a>
+                                </li>
+                                <li>
+                                    <a href="https://ci.unt.edu/" target="_blank">Information</a>
+                                </li>
+                                <li>
+                                    <a href="http://computerscience.engineering.unt.edu/" target="_blank">Computer Science</a>
+                                </li>
+                                <li>
+                                    <a href="https://cob.unt.edu/" target="_blank">Business</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </article>
+                <!--Form-->
+                <form name = "newAdmitForm">
+                    <!--First name-->
+                        <label for="firstName">Applicant's First Name:</label>
+                        <input type="text" id="firstName" name="fName" placeholder="Enter your First Name"/>
+                        <br /><br />
+                    <!--Last Name-->                    
+                        <label for="lastName">Applicant's Last Name:</label>
+                        <input type="text" id="lastName" name="lName" placeholder="Enter your Last Name" />                    
+                    <br /><br />
+                    <!--Contact number-->
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="text" id="contactNumber" name="contact" placeholder="Contact Number" />
+                    <br /><br />
+                    <!--Gender-->
+                        <label for="gender">Applicant's Gender:</label>
+                        <div id="gender">
+                            <!--male-->
+                            <label for="male">Male:</label>
+                            <input type="radio" id="male" name="gender" value="Male"/>
+
+                            <!--female-->
+                            <label for="female">Female:</label>
+                            <input type="radio" id="female" name="gender" value="Female"/>
+                        </div>
+                    <br />
+                    <!--Check box field-->
+                        <label for="underGrad">Did you complete your under graduation?</label>
+                        <input type="checkbox" id="underGrad" name="underGrad" value="underGrad">
+                    <br /><br />
+                    <!--submit button-->
+                        <button type="submit" id="submit">
+                            <span>Submit</span>
+                        </button>
+                        &nbsp &nbsp
+                    <!--reset/cancel-->
+                        <button type="reset" id="reset">
+                            <span>Cancel</span>
+                        </button>
+                </form>
+            </section>
+            <!--Footer section-->
+            <footer>
+                <p>This is footer section</p>
+            </footer>
+        </article>
+    </body>
+</html>

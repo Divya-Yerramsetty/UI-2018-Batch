@@ -1,0 +1,49 @@
+form[name="newAdmitForm"]{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    border: 2px solid #5900ff;
+    padding: 50px;
+    width: 250px;
+}
+
+ul{ 
+    list-style-type: none;
+}
+
+li{
+    display:inline-block;
+    margin: 0 10px;
+}
+
+button[type = "submit"] {
+    border-color: #000;
+    background-color: #00ff00;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight:bold;
+}
+
+button[type = "submit"]:hover{
+    border-color: #5900ff;
+    background-color: #54bb06;
+}
+
+button[type = "reset"] {
+    border-color: #000;
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight:bold;
+}
+
+button[type = "reset"]:hover{
+    border-color: #5900ff;
+    background-color: #bb063c;
+}
+
+input:focus{
+    border:2px solid #000;
+    background: #000;
+    color: #fff;
+}
