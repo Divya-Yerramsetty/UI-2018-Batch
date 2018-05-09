@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--head of the web page-->
+    <head>
+        <!--title of the html file-->
+        <title>Pizza Express</title>
+        
+        <!--Icon to the page-->
+        <link rel="icon" href="Pizza-icon.jpg">
+
+        <!--CSS external style-->
+        <link href="styles.css" rel="stylesheet"/>
+
+
+    </head>
+
+    <!--body of the web page-->
+    <body>
+
+        <article>
+
+            <!--page header-->
+            <header id="main-heading">
+                <h1>Pizza Express</h1>
+            </header>
+
+            <!--main body of the page-->
+            <section id="main-section">
+                <article>
+                    <header id="nav-heading">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <section>
+                        <!--Online order form-->
+                        <form name="OrderForm">
+                            <!--Order selection details-->
+                            <label for="orderDetails"</label>ORDER DETAILS</label>
+                            <div>
+                                <label for="selection">What's your order type?:</label><br>
+                                <input type="radio" name="selection" value="online"> Online<br>
+                                <input type="radio" name="selection" value="checkout"> Checkout<br>
+                            </div><br>
+                            <!--Size selection-->
+                            <div>
+                                <label for="pizzaSize">Select pizza's size:</label>
+                                </br>
+                                <select name="pSize" required>
+                                    <option value="Personal">Personal 8"</option>
+                                    <option value="Small">Small 10"</option>
+                                    <option value="Medium">Medium 12"</option>
+                                    <option value="Large">Large 14"</option>
+                                </select>
+                            </div><br>
+                            <!--Select Toppings-->
+                            <div>
+                                <label for="toppings">Check all the required toppings</label><br>
+                                <input type="checkbox" name="toppings" value="cheese"checked>Cheese<br>
+                                <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+                                <input type="checkbox" name="toppings" value="olives">Olives
+                            </div><br><br>
+
+                            <!--Order delivery details-->
+                            <label for="deliveryDetails"</label>DELIVERY DETAILS</label>
+
+                            <!--Name for the order-->
+                            <div>
+                                <label for="Name">Name for the order:</label>
+                                <input type="text" id="Name" name="Name" placeholder="Enter a name for the order" required/>
+                            </div><br>
+
+                            <!--Address-->
+                            <div>
+                                <label for="Address">Address for order delivery:</label>
+                                <input type="text" id="Address" name="Address" placeholder="Address for the order"  required/>
+                            </div><br>
+
+                            <!--Contact Number-->
+                            <div>
+                                <label for="contactNumber">Contact Number:</label>
+                                <input type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number"  required/>
+                            </div><br>
+
+                            <!--Email id-->
+                            <div>
+                                <label for="email">Email id:</label><br>
+                                <input type="email" id="email" name="email" placeholder="Enter an email id"/>
+                            </div><br>
+
+                            <!--Submit and Reset buttons-->
+                            <!--Submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                            &nbsp &nbsp
+                            <!--Reset-->
+                            <button type="reset" id="reset">
+                                <span>Reset</span>
+                            </button>
+                        </form>
+                    </section>
+                </article>
+            </section>
+            <!--footer of the page-->
+            <footer id="main-footer" >
+                <!--footer navigation-->
+                <nav>
+                    <ul>
+                        <li>
+                             All rights reserved to Pizza Express
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </article>
+    </body>
+</html>
