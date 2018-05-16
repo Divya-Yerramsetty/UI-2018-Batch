@@ -1,0 +1,59 @@
+/*IPAD specific styles*/
+@media only screen and (min-width: 660px) and (max-width: 768px) and (orientation: portrait){
+    .row-1{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1024px) and (orientation: landscape){
+    .row-1{
+        margin: 0 auto;
+        float: none;
+        width: 575px;
+        display: block;
+    }
+}
+
+/*IPHONE specific styles*/
+@media only screen and (min-width: 200px) and (max-width: 375px) and (orientation: portrait){
+    .row-1{
+        margin: 50px auto;
+        float: left;
+        width: 215px;
+        display: block;
+    }
+
+    body{
+    background-size: 750%;    
+    }
+
+    form[name="OrderForm"]{
+
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+    
+    }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape){
+    .row-1{
+        margin: 20px auto;
+        float: none;
+        width: 360px;
+        display: block;
+    }
+
+    body{
+        background-size: 550%;    
+        }
+
+        form[name="OrderForm"]{
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        
+        }
+}
