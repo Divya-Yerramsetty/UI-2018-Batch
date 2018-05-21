@@ -1,0 +1,54 @@
+#background{
+    background-color:#006491;
+
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.navbar-brand:hover {
+    background-color: #555;
+    color: #fff !important;
+}
+
+
+li>a{
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+li>a:hover {
+    background-color: #555;
+    color: #fff !important;
+}
+
+start>h4{
+    font-weight:500;
+    color: #006491;
+}
+
+.card-title {
+    float:none;
+}
+
+.form-group {
+    
+    border: 2px solid #000;
+    padding: 20px 20px;
+    background-color: #e6f6fc;
+}
+
+label{
+    font-weight:bold;
+    font-style: italic;
+}
+
+#back{
+    background-color: yellow;
+}
