@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Strings
+    </head>
+    
+    <body>
+        <script>
+        //String concatenation
+        var a = "Div";
+        var b = "Ya";
+        var c = a+b;
+        console.log(c);
+
+        var d = " How are you?";
+        console.log(c.concat(d));
+
+        //Length
+        console.log(c.length);
+
+        //Replace
+        var n  = "Divya Divv."
+        var name = n.replace(/D/g, 'd'); // g-to make changes at entire length i.e globally
+        console.log(name);
+
+        //CharAt and charCodeAt
+        console.log(n.charAt(3));
+        console.log(n.charAt(12)); //blank output when the length is exceeded
+
+        console.log(n.charCodeAt(6));
+        console.log(n.charCodeAt(-1)); 
+        console.log(n.charCodeAt(15));
+
+        //Index
+        console.log(n.indexOf('a'));
+        console.log(n.indexOf('x')); //Outputs -1 when character is not there
+
+        console.log(n.search('a'));
+        console.log(n.search('.'));
+
+        //Slice
+        var x = "String slice takes positive and negative values";
+        var res = x.slice(0,20);
+        console.log(res);
+        console.log(x.slice(-30, -10));
+
+        //Substring
+        console.log(x.substring(0,20));
+        console.log(x.substring(-25,-10)); //Just blank as output.
+
+        //substr
+        console.log(x.substr(25,5)); //
+
+        //Split
+        var text = "There are minute differences in the, types of strings";
+        console.log(text.split(" "));
+
+        //Match
+        var p = "My name is Divya";
+        var q = "name";
+        console.log(p.match(q));
+        </script>
+    </body>
+</html>

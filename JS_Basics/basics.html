@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS practise
+        </title>
+    </head>
+
+
+    <body>
+    <button id="btn" onclick="clickme()">Click me!</button> 
+
+    </br></br>
+
+    <button class="btn" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</button>
+
+    </br></br>
+    
+    <!--script src="basics.js"> </script-->
+    <script>
+        function add(a,b){
+            var sum = a+b;
+            return sum;
+            }
+
+            document.writeln(add(8,4));
+
+            document.write("\n\n");
+
+//Funtion to swap 2 numbers
+        function swap() {
+            var p = 5;
+            var q = 9;
+            p = p+q;
+            q = p-q;
+            p = p-q;
+
+            return [p,q];
+        }
+            document.writeln(swap());
+            console.log(swap());
+
+//Onclick function
+    function clickme(){
+        document.getElementById("btn").style.backgroundColor ="lightblue";
+    }
+
+//Mouseover and mouseout functions
+    function mouseOver(){
+        document.getElementsByClassName("btn")[0].style.color = "red";
+}
+
+function mouseOut() {
+    document.getElementsByClassName("btn")[0].style.color = "black";
+}
+    
+
+//Dialogue boxes
+
+alert("hi");
+
+confirm("Is it working?");
+    </script>
+    </body>
+</html>
