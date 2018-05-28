@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Arrays
+    </head>
+
+    <body>
+        <script>
+            //Array declaration
+            var names = ['alpha', 'beta', 'gamma', 'theta'];
+
+            var numbers = new Array();
+
+            numbers[0]= 1;
+            numbers[1]= 2;
+            numbers[2]= 3;
+            numbers[3]= 4;
+
+            console.log(Array.isArray(names));
+            console.log(numbers);
+
+            //Length
+            console.log(names.length);
+
+            //Pop
+            names.pop();
+            console.log(names);
+
+            //Push
+            names.push('rho');
+            console.log(names);
+            
+            //Shift
+            names.shift();
+            console.log(names);
+
+            //Unshift
+            names.unshift('pi');
+            console.log(names);
+
+            //Splice
+            names.splice(1,0,'alpha');
+            console.log(names);
+
+            names.splice(2,1,'delta');
+            console.log(names);
+
+            //Slice
+            console.log(numbers.slice(2));
+            console.log(numbers.slice(0,3));
+
+            //IndexOf
+            console.log(names.indexOf('delta'));
+
+            var names2 = ['sigma','omega'];
+
+            //Concat
+            console.log(names.concat(names2));
+
+            //Join
+            console.log(names.join(' / '));
+
+            //Sort
+            console.log(names.sort());
+
+            console.log(names2.reverse());
+            console.log(names.reverse());
+
+            //Program to check if input is palindrome
+            var text = "1221";
+            var new_text = text.split("");
+            var rev = new_text.reverse();
+            console.log(rev);
+            var res = rev.join('');
+            console.log(res);
+
+            console.log(text === res);
+            
+        </script>
+    </body>
+</html>
