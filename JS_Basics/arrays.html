@@ -5,6 +5,7 @@
     </head>
 
     <body>
+        <!--Practise programs from line 69-->
         <script>
             //Array declaration
             var names = ['alpha', 'beta', 'gamma', 'theta'];
@@ -67,6 +68,7 @@
             console.log(names.reverse());
 
             //Program to check if input is palindrome
+            /*_________________________________________*/
             var text = "1221";
             var new_text = text.split("");
             var rev = new_text.reverse();
@@ -76,8 +78,40 @@
 
             console.log(text === res);
 
+            //Program to reverse a string
+            /*___________________________*/
+            var statement = "This reverses a string now"
+            var split_str = statement.split(" ");
+            var rev_str = split_str.reverse();
+            var join_str = rev_str.join(" ");
+            console.log(join_str);
+
+
             //Program to sort
-            var x = "hi";
+            /*__________________________*/
+            var sort_age = [
+                {
+                age: 20,
+                name: "Div"
+                },
+
+                {
+                age:28,
+                name: "Ya"
+                },
+
+                {
+                age: 19,
+                name: "Vid"
+                }
+            ];
+
+            var res_sort = sort_age.sort(function(a,b) {
+                return a.age-b.age
+            }
+            )
+
+            console.log(res_sort);
         </script>
     </body>
 </html>
