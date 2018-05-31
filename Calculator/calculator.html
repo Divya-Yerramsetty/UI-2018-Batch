@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width = device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </head>
+</br>
+    <body>
+        <header>
+            <h3 align="center">Calculator</h3>
+        </header>
+
+        <div class="col-md-6 offset-md-3 start">
+        <label>Display of Numbers:</label> &nbsp &nbsp  
+        <input type="text" id="number">
+        </br></br>
+        <table class="table">
+            <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('1')">1</button></td>
+				<td><button type="button" class="btn btn-primary" onclick = "enter('2')">2</button></td>
+				<td><button type="button" class="btn btn-primary" onclick = "enter('3')">3</button></td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('4')">4</button></td>
+				<td><button type="button" class="btn btn-primary" onclick = "enter('5')">5</button></td>
+				<td><button type="button" class="btn btn-primary" onclick = "enter('6')">6</button></td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('7')">7</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('8')">8</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('9')">9</button></td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('0')">0</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('.')">.</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "clear()">C</button></td>
+    
+                
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td><button type="button" class="btn btn-primary" onclick = "enter(',')">,</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('^')">^</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "enter('-')">-</button></td>
+            </tr>
+            </tbody>
+        </table>
+        
+        
+                <button type="button" class="btn btn-warning" onclick = "roundoff()">Roundoff</button> &nbsp &nbsp
+                <button type="button" class="btn btn-warning" onclick = "abs()">Absolute</button>&nbsp &nbsp
+                
+                <button type="button" class="btn btn-warning" onclick = "ceil()">Ceil</button>&nbsp &nbsp
+                <button type="button" class="btn btn-warning" onclick = "floor()">Floor</button>&nbsp &nbsp
+                
+                </br></br>
+                <button type="button" class="btn btn-warning" onclick = "power()">Exponent</button>&nbsp &nbsp
+                <button type="button" class="btn btn-warning" onclick = "sqrt()">Square root</button>&nbsp &nbsp
+                
+                <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Enter numbers with spaces or commas between them" 
+                onclick = "min()">Math min</button>&nbsp &nbsp
+                <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Enter numbers with spaces or commas between them"
+                onclick = "max()">Math max</button>
+
+            </br></br>
+            <h6>To get random number</h6>
+            <label>Enter first number:</label> &nbsp &nbsp  
+            <input type="text" id="number1">
+            <label>Enter second number:</label> &nbsp &nbsp  
+            <input type="text" id="number2">
+            </br>
+            <label>Random number generated</label> &nbsp &nbsp  
+            <input type="text" id="rannum">
+            </br>
+            <button type="button" class="btn btn-warning" onclick = "random_num()">Random</button>
+        
+        </div>
+        
+        <script>
+            var num = document.getElementById('number').value;
+
+            function enter(str){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = num+str;
+            }
+            
+            //Round off function
+            function roundoff(){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = Math.round(num);
+            }
+
+            //Absolute function
+            function abs(){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = Math.abs(num);
+            }
+
+            //Ceil function
+            function ceil(){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = Math.ceil(num);
+            }
+
+            //Floor function
+            function floor(){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = Math.floor(num);
+            }
+            
+            //Power function
+            function power(){
+                var num = document.getElementById('number').value;
+                var value = num.split('^');
+                document.getElementById('number').value = Math.pow(value[0],value[1]);
+            }
+
+            //Square root function
+            function sqrt(){
+                var num = document.getElementById('number').value;
+                document.getElementById('number').value = Math.sqrt(num);
+            }
+
+            //Math min function
+            function min(){
+                var num = document.getElementById('number').value;
+                var value = num.split(/[ ,]+/);
+                document.getElementById('number').value = Math.min.apply(Math, value);
+            }
+
+            //Math max function
+            function max(){
+                var num = document.getElementById('number').value;
+                var value = num.split(/[ ,]+/);
+                document.getElementById('number').value = Math.max.apply(Math, value);
+            }
+
+            //Random function
+            function random_num() {
+                var first = document.getElementById('number1').value;
+                var second = document.getElementById('number2').value;
+                var random =  ((Math.random() * (second-first)) + +first);
+                document.getElementById('rannum').value = random;
+            }
+
+            //Clear Function Not working
+            function clear(){
+                document.getElementById('number').value = (' ');
+            }
+            
+            $(function () {
+                 $('[data-toggle="popover"]').popover()
+            })
+           
+        </script>
+    </body>
+</html>
