@@ -43,7 +43,7 @@
                 <th scope="row"></th>
                 <td><button type="button" class="btn btn-primary" onclick = "enter('0')">0</button></td>
                 <td><button type="button" class="btn btn-primary" onclick = "enter('.')">.</button></td>
-                <td><button type="button" class="btn btn-primary" onclick = "clear()">C</button></td>
+                <td><button type="button" class="btn btn-primary" onclick = "clr()">C</button></td>
     
                 
             </tr>
@@ -153,8 +153,8 @@
                 document.getElementById('rannum').value = random;
             }
 
-            //Clear Function Not working
-            function clear(){
+            //Clear Function 
+            function clr(){
                 document.getElementById('number').value = (' ');
             }
             
